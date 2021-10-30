@@ -12,31 +12,32 @@ function getRandomIndex(array) {
 }
 
 function getCheckedRadioButton() {
-  if (radioButtons[0].checked) {
-    return radioButtons[0].value;
-  } else if (radioButtons[1].checked) {
-    return radioButtons[1].value;
-  } else if (radioButtons[2].checked) {
-    return radioButtons[2].value;
-  } else if (radioButtons[3].checked) {
-    return radioButtons[3].value;
+  for (var i = 0; i < radioButtons.length; i++) {
+    if (radioButtons[i].checked) {
+      return radioButtons[i].value;
+    }
   }
 }
 
 function getRecipeList(radioButtonValue) {
   var recipeList;
-  if (radioButtonValue === "side") {
-    return recipeList = sides;
-  } else if (radioButtonValue === "mainDish") {
-    return recipeList = mainDishes;
-  } else if (radioButtonValue === "dessert") {
-    return recipeList = desserts;
-  } else {
-    return recipeList = "entireMeal";
+  switch (radioButtonValue) {
+    case 'side':
+      return recipeList = sides;
+      break;
+    case 'mainDish':
+      return recipeList = mainDishes;
+      break;
+    case 'dessert':
+      return recipeList = desserts;
+      break;
+    case 'entireMeal':
+      return recipeList = 'entireMeal';
+      break;
   }
 }
 
-function displayRecipe(event) {
+function displayRecipe() {
   cookPot.classList.add('hidden');
   var recipeList = getRecipeList(getCheckedRadioButton());
   if (Array.isArray(recipeList)) {

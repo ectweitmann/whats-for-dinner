@@ -10,6 +10,7 @@ red - #ee5253
 body {
   margin: 0;
   background-image: url("assets/burger-friends.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   background-color: white;
 }
@@ -28,6 +29,63 @@ header > h1 {
   margin-left: 2%;
 }
 
+.login-view {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background-color: rgb(255, 255, 255);
+  border: 25px outset #0fb9b1;
+  border-radius: 10px;
+  width: 50vw;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-between;
+}
+
+#logo {
+  height: 30%;
+  margin-top: 5%;
+}
+.login-box > h1, p, input, button {
+  font-family: 'Roboto', sans-serif;
+  margin: auto 0;
+}
+
+.login-box > h1 {
+  font-size: 475%;
+  margin: 0px;
+}
+
+.login-box > p {
+  font-size: 150%;
+  margin-bottom: 0;
+}
+
+.login-box > input {
+  height: 7%;
+  width: 40%;
+  text-align: center;
+  font-size: 110%;
+  margin-bottom: 0;
+}
+
+.login-box > button {
+  background-color: #0fb9b1;
+  border: none;
+  border-radius: 7px;
+  width: 15%;
+  height: 7%;
+  font-size: 100%;
+}
+
 main {
   height: 100%;
   display: flex;
@@ -43,7 +101,7 @@ main > section {
   margin-bottom: 40vh;
 }
 
-div {
+.select-recipe-container {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -57,24 +115,24 @@ sup {
   color: #ee5253;
 }
 
-div > h1, label, #lets-cook {
+.select-recipe-container > h1, label, #lets-cook {
   margin-left: 11%;
 }
 
-div > label, #lets-cook {
+.select-recipe-container > label, #lets-cook {
   margin-top: 5%;
 }
 
-div > h1 {
+.select-recipe-container > h1 {
   font-size: 200%;
   margin-bottom: 0px;
 }
 
-div > label {
+.select-recipe-container > label {
   font-size: 125%;
 }
 
-div > #lets-cook {
+.select-recipe-container > #lets-cook {
   background-color: #0fb9b1;
   border: none;
   border-radius: 7px;

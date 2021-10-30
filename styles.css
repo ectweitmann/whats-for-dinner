@@ -57,11 +57,11 @@ sup {
   color: #ee5253;
 }
 
-div > h1, label, button {
+div > h1, label, #lets-cook {
   margin-left: 11%;
 }
 
-div > label, button {
+div > label, #lets-cook {
   margin-top: 5%;
 }
 
@@ -74,7 +74,7 @@ div > label {
   font-size: 125%;
 }
 
-div > button {
+div > #lets-cook {
   background-color: #0fb9b1;
   border: none;
   border-radius: 7px;
@@ -98,8 +98,8 @@ div > button {
 
 .show-recipe > h1 {
   text-align: center;
-  font-size: 300%;
-  margin: 0px;
+  font-size: 200%;
+  margin: 0px 11%;
 }
 
 .show-recipe > img {

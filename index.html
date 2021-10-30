@@ -9,18 +9,23 @@
       <h1 class="page-title">What's for Dinner?</h1>
       <button class="hidden" id="add-recipe">Add Recipe</button>
     </header>
-    <main>
+    <section class="login-view hidden">
+      <div class="login-box">
+        <img id="logo" src="assets/cookpot.svg" alt="Cook Pot graphic">
+        <h1>Hungry?</h1>
+        <p><i>Enter your name below to get started finding recipes!</i></p>
+        <input type="text" name="name" maxlength="36" placeholder="First name" required>
+        <button>Submit</button>
+      </div>
+    </section>
+    <main class="">
       <section class="select-recipe">
-        <div>
+        <div class="select-recipe-container">
           <h1 class="section-prompt">What are you looking for?<sup>*</sup></h1>
           <label><input id="side" type="radio" name="recipe" value="side" required/> Side</label>
-
           <label><input id="main-dish" type="radio" name="recipe" value="mainDish"/> Main Dish</label>
-
           <label><input id="dessert" type="radio" name="recipe" value="dessert"/> Dessert</label>
-
           <label><input id="entire-meal" type="radio" name="recipe" value="entireMeal"/> Entire Meal</label>
-
           <button id="lets-cook">LET'S COOK!</button>
         </div>
       </section>

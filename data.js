@@ -9,6 +9,7 @@ var sides = [
   "Shrimp Summer Rolls",
   "Garlic Butter Mushrooms",
   "Hush Puppies",
+  "Buffalo Cauliflower"
 ];
 
 var mainDishes = [

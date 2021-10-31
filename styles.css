@@ -1,12 +1,3 @@
-/* font-family: 'Roboto', sans-serif;
-
-COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253
-
-*/
 body {
   margin: 0;
   background-image: url("assets/burger-friends.jpg");
@@ -82,7 +73,7 @@ header > h1 {
   margin-bottom: 0;
 }
 
-.login-box > button {
+.login-box > .submit {
   background-color: #0fb9b1;
   border: none;
   border-radius: 7px;

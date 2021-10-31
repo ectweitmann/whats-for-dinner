@@ -11,13 +11,16 @@ var showRecipeSection = document.querySelector(".show-recipe");
 var cookPot = document.querySelector("img");
 var welcomeMessage = document.querySelector(".welcome");
 
-buttonLetsCook.addEventListener('click', displayRecipe);
-inputName.addEventListener('change', validateLogin)
+inputName.addEventListener('change', validateInputSubmission)
 submitButton.addEventListener('click', changeToMainPage);
+divRecipeContainer.addEventListener('change', validateInputSubmission);
+buttonLetsCook.addEventListener('click', displayRecipe);
 
-function validateLogin() {
-  if (inputName.value) {
+function validateInputSubmission(event) {
+  if (event.target.value && submitButton.disabled) {
     submitButton.disabled = false;
+  } else if (event.target.value) {
+    buttonLetsCook.disabled = false;
   }
 }
 

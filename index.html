@@ -7,30 +7,30 @@
   <body>
     <header>
       <h1 class="page-title">What's for Dinner?</h1>
-      <button class="hidden" id="add-recipe">Add Recipe</button>
     </header>
-    <section class="login-view hidden">
+    <section class="login-view">
       <div class="login-box">
         <img id="logo" src="assets/cookpot.svg" alt="Cook Pot graphic">
         <h1>Hungry?</h1>
-        <p><i>Enter your name below to get started finding recipes!</i></p>
-        <input type="text" name="name" maxlength="36" placeholder="First name" required>
-        <button>Submit</button>
+        <p class="instructions"><i>Enter your name below to get started finding recipes!</i></p>
+        <input class="first-name" type="text" name="name" maxlength="36" placeholder="First name" required="true">
+        <button class="submit" disabled="true">Submit</button>
       </div>
     </section>
-    <main class="">
+    <main class="hidden">
       <section class="select-recipe">
         <div class="select-recipe-container">
           <h1 class="section-prompt">What are you looking for?<sup>*</sup></h1>
-          <label><input id="side" type="radio" name="recipe" value="side" required/> Side</label>
-          <label><input id="main-dish" type="radio" name="recipe" value="mainDish"/> Main Dish</label>
-          <label><input id="dessert" type="radio" name="recipe" value="dessert"/> Dessert</label>
-          <label><input id="entire-meal" type="radio" name="recipe" value="entireMeal"/> Entire Meal</label>
+          <label><input class="radioBttns" id="side" type="radio" name="recipe" value="side" required/> Side</label>
+          <label><input class="radioBttns" id="main-dish" type="radio" name="recipe" value="mainDish"/> Main Dish</label>
+          <label><input class="radioBttns" id="dessert" type="radio" name="recipe" value="dessert"/> Dessert</label>
+          <label><input class="radioBttns" id="entire-meal" type="radio" name="recipe" value="entireMeal"/> Entire Meal</label>
           <button id="lets-cook">LET'S COOK!</button>
         </div>
       </section>
       <section class="show-recipe">
         <img src="assets/cookpot.svg" alt="Cook Pot graphic">
+        <span class="welcome"></span>
       </section>
     </main>
     <script src="data.js"></script>

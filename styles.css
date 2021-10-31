@@ -15,6 +15,8 @@ body {
   background-color: white;
 }
 
+/* ~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~ */
+
 header {
   height: 7%;
   background: #0fb9b1;
@@ -29,8 +31,10 @@ header > h1 {
   margin-left: 2%;
 }
 
+/* ~~~~~~~~~~~~~~ Login Page ~~~~~~~~~~~~~~~~ */
+
 .login-view {
-  height: 100%;
+  height: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,7 +58,8 @@ header > h1 {
   height: 30%;
   margin-top: 5%;
 }
-.login-box > h1, p, input, button {
+
+.login-box > h1, .instructions, input, .submit {
   font-family: 'Roboto', sans-serif;
   margin: auto 0;
 }
@@ -86,8 +91,10 @@ header > h1 {
   font-size: 100%;
 }
 
+/* ~~~~~~~~~~~~~~ Main ~~~~~~~~~~~~~~~~ */
+
 main {
-  height: 100%;
+  height: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -98,8 +105,10 @@ main > section {
   width: 35vw;
   height: 50vh;
   background-color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 40vh;
+  margin-bottom: 30vh;
 }
+
+/* ~~~~~~~~~~~~~~ Select Recipe Section ~~~~~~~~~~~~~~~~ */
 
 .select-recipe-container {
   height: 100%;
@@ -142,6 +151,8 @@ sup {
   font-size: 100%;
 }
 
+/* ~~~~~~~~~~~~~~ Show Recipe Section ~~~~~~~~~~~~~~~~ */
+
 .show-recipe {
   display: flex;
   flex-direction: column;
@@ -150,8 +161,13 @@ sup {
   font-family: 'Roboto', sans-serif;
 }
 
+.show-recipe > span {
+  font-size: 175%;
+  font-style: italic;
+}
 .show-recipe > p {
   font-size: 150%;
+  font-style: italic;
 }
 
 .show-recipe > h1 {
